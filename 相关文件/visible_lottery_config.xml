@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<VisibleLottery>
+	<!--DataLimite 一些相关的日产出限制
+		pick_bag_num 每日拾取福袋限制
+		pray_num 每日祈福限制
+		recored_num 本轮活动，记录玩家获取到物品的最大数目
+	-->
+	<DataLimite pick_bag_num="20" pray_num="5" record_num="20"/>
+
+	<NPC id="160008"/> <!-- 抽奖家具的NPC节点 -->
+	<PrayReward><!-- 祈福奖池，所有活动公用一个奖池 -->
+		<!--
+			type=1-经验 para1表示经验值
+			type=2-G币 para1表示G币数
+			type=3-物品 para1表示男性物品id，para2表示女性物品id，para3表示数量/天数
+			probability 抽奖权重
+			daily_max 日产出最大量，配置0或不配置表示无上限
+			broadcast 1.表示广播。0或不配置，表示不广播
+			flags 物品珍贵级别。0.（或不配置）普通 1.精品 2.珍品 4.极品（豪）
+			effect 是否播放特效 0.（或不配置）没有特效 1.有特效
+			show 是否在展板显示 0.（或不配置）不在展板显示 1.在展板显示
+		-->
+		<RewardItems>
+	    <RewardItem type="3" para1="3041149" para2="3041149" para3="1" probability="1500" daily_max="0" />
+			<RewardItem type="3" para1="3018326" para2="3018326" para3="1" probability="1200" daily_max="0" />
+			<RewardItem type="3" para1="3018252" para2="3018252" para3="1" probability="1400" daily_max="0" />
+		  <RewardItem type="3" para1="3041146" para2="3041146" para3="1" probability="500" daily_max="0" />
+			<RewardItem type="3" para1="3018317" para2="3018317" para3="1" probability="400" daily_max="0" />
+			<RewardItem type="3" para1="3018251" para2="3018251" para3="1" probability="200" daily_max="0" />
+			<RewardItem type="3" para1="3018275" para2="3018275" para3="1" probability="1000" daily_max="0" />
+			<RewardItem type="3" para1="1081625" para2="1182402" para3="7" probability="200" daily_max="0" />
+			<RewardItem type="3" para1="3018273" para2="3018273" para3="1" probability="1700" daily_max="0" />
+			<RewardItem type="3" para1="3115013" para2="3115013" para3="1" probability="400" daily_max="0" />
+			<RewardItem type="3" para1="3041129" para2="3041129" para3="1" probability="900" daily_max="0" />
+			<RewardItem type="3" para1="3041136" para2="3041136" para3="1" probability="600" daily_max="0" />
+		</RewardItems>
+	</PrayReward>
+	<BagsReward> <!-- 福袋奖池 -->
+  
+    <!-- 一个bag节点下只能有一个RewardItems -->
+  
+    <Bag fit_type="5200278">
+      <RewardItems><!-- 一级福袋奖池 -->
+        <RewardItem type="3" para1="3097174" para2="3097174" para3="1" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="3068110" para2="3068110" para3="1" probability="1900" daily_max="0" />
+        <RewardItem type="3" para1="3115045" para2="3115045" para3="1" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="3048102" para2="3048102" para3="1" probability="2000" daily_max="0" />
+        <RewardItem type="3" para1="3020002" para2="3020002" para3="10" probability="300" daily_max="0" />
+        <RewardItem type="3" para1="3084169" para2="3084169" para3="1" probability="200" daily_max="0" />
+        <RewardItem type="3" para1="3018326" para2="3018326" para3="1" probability="700" daily_max="0" />
+        <RewardItem type="3" para1="3018284" para2="3018284" para3="1" probability="2300" daily_max="0" />
+        <RewardItem type="3" para1="3085105" para2="3085105" para3="1" probability="100" daily_max="0" />
+        <RewardItem type="3" para1="4015884" para2="4115912" para3="3" probability="800" daily_max="0" />
+        <RewardItem type="3" para1="1031379" para2="1132227" para3="3" probability="700" daily_max="0" />			
+      </RewardItems>
+    </Bag>
+    <Bag fit_type="5200279">
+      <RewardItems><!-- 二级福袋奖池 -->
+        <RewardItem type="3" para1="3097174" para2="3097174" para3="1" probability="1000" daily_max="0" />
+        <RewardItem type="3" para1="3084171" para2="3084171" para3="1" probability="400" daily_max="0" />
+        <RewardItem type="3" para1="3115045" para2="3115045" para3="1" probability="600" daily_max="0" />
+        <RewardItem type="3" para1="3018275" para2="3018275" para3="1" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="3020002" para2="3020002" para3="50" probability="300" daily_max="0" />
+        <RewardItem type="3" para1="3018251" para2="3018251" para3="1" probability="600" daily_max="0" />
+        <RewardItem type="3" para1="3018041" para2="3018041" para3="1" probability="1495" daily_max="0" />
+        <RewardItem type="3" para1="3115013" para2="3115013" para3="1" probability="600" daily_max="0" />
+        <RewardItem type="3" para1="2038251" para2="2038251" para3="3" probability="700" daily_max="0" />
+        <RewardItem type="3" para1="1044256" para2="1145663" para3="3" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="1044254" para2="1145661" para3="3" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="1060617" para2="1161011" para3="3" probability="300" daily_max="0" />
+        <RewardItem type="3" para1="1031701" para2="1132539" para3="3" probability="300" daily_max="0" />
+        <RewardItem type="3" para1="1062152" para2="1162171" para3="3" probability="400" daily_max="0" />
+        <RewardItem type="3" para1="1080840" para2="1180751" para3="3" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="1044888" para2="1144938" para3="3" probability="400" daily_max="0" />
+        <RewardItem type="3" para1="1045308" para2="1144826" para3="3" probability="500" daily_max="0" />
+        <RewardItem type="3" para1="3018300" para2="3018300" para3="1" probability="300" daily_max="0" /> 
+        <RewardItem type="3" para1="1044535" para2="1146001" para3="3" probability="100" daily_max="0"/>  			
+        <RewardItem type="3" para1="1044232" para2="1145634" para3="1" probability="5" daily_max="0" />	
+      </RewardItems>
+    </Bag>
+	</BagsReward>
+
+	<!-- 活动配置 
+		 activity_begin 活动开始时间（刷新时间，客户端展示刷新）
+		 lottery_begin 抽奖开始时间（客户端中的活动开始时间）
+		 lottery_end 抽奖结束时间（客户端中的活动结束时间）
+		 activity_end 活动结束时间（活动结束，客户端刷新）
+                 reset_id 控制重置玩家抽奖次数的ID.更改此ID会，重置玩家身上的累计抽奖次数为0。
+	-->
+	<Activity id="39" reset_id="31" activity_name="梦幻仙露池" lottery_name="仙露池" activity_begin="2019-4-11 00:00:00" lottery_begin="2019-4-11 10:00:00" lottery_end="2019-4-16 23:59:59" activity_end="2019-5-30 04:00:00">
+		<!--H5抽奖开关 1-开 0-关 默认开-->
+		<H5Lottery opened ="1" />
+		
+	<!--
+	<ExchangeConfig> 小灵通兑换配置
+		<ExchangeItem> 为对应抽奖系统所需要支持的抽奖包裹
+			item_id			-	兑换物品id
+			price_diamond	-	钻石购买的单价
+			limit_max		-	允许兑换的最大数量
+			unit			-	单位（中文即可，用于H5端显示）
+			支持配置多种抽奖包裹
+	-->
+  <ExchangeConfig>
+			<ExchangeItem item_id="3050216" price_diamond="10  " limit_max="500" unit="个" /> <!-- 仙露莲包裹 -->
+			<ExchangeItem item_id="3050207" price_diamond="100 " limit_max="500" unit="个" /> <!-- 仙露莲微型包裹 -->
+			<ExchangeItem item_id="3050208" price_diamond="1000" limit_max="500" unit="个" /> <!-- 仙露莲中型包裹 -->
+			<ExchangeItem item_id="3050209" price_diamond="2000" limit_max="500" unit="个" /> <!-- 仙露莲大型包裹 -->
+	</ExchangeConfig>
+	<!--
+		<OpenPackages> 快速打开包裹配置
+			<pkg> 待打开包裹配置
+				id	-	包裹物品id
+	-->
+	<OpenPackages>
+		<pkg id="3050216"/>
+		<pkg id="3050207"/>
+		<pkg id="3050208"/>
+		<pkg id="3050209"/>
+	</OpenPackages>
+		<!-- 道具不足时，打开道具包裹名称 
+				id 对应的包裹ID （必须是OpenPackages中配置了的id）
+		-->
+	<QuickBuyPackages pkg_id="3050216" />
+		
+		<!-- 世界地图的推送通知
+			 img 图片资源ID
+			 context 推荐内容
+		-->
+		<WorldMapNotify img="nurb_kfsq_tuisong" context="$tnurb_tuichu_9$天空之城降临仙灵幻境，宝物从天而降落入仙露池，在仙露池边许愿还能获得珍贵奖励！大家快去看看吧！$z"/>
+
+		<!-- 抽奖消耗配置
+			 lottery_times 抽奖次数
+			 cost_prop 消耗的道具
+			 cost_count 消耗道具的数量
+		-->
+		<LotteryCosts unit="个"><!-- 抽奖消耗配置 -->
+			<times lottery_times="1" cost_prop="3036008" cost_count="1"> <!-- 抽1次奖消耗 -->
+			</times> 
+			<times lottery_times="10" cost_prop="3036008" cost_count="10"> <!-- 抽10次奖消耗 -->
+				<LuckyBags><!-- 产生福袋类型以及数量 bag_level 福袋等级 count 福袋数量-->
+					<bag bag_level="1" count="5"/>
+				</LuckyBags>
+			</times>
+			<times lottery_times="50" cost_prop="3036008" cost_count="50"> <!-- 抽50次奖消耗 -->
+				<LuckyBags><!-- 产生福袋类型以及数量 -->
+					<bag bag_level="1" count="5"/>
+					<bag bag_level="2" count="5"/>
+				</LuckyBags>
+			</times>
+		</LotteryCosts>
+    <!-- 
+		抽奖奖池 
+		is_reset 是否标记位重置物品，1：是，0：否。 抽中重置物品，玩家身上的累计抽奖次数清0
+		-->
+		<LotteryReward> 
+			<RewardItems>
+				<RewardItem type="3" para1="2044526 " para2="2044526 " para3="0  " probability="50    " daily_max="0" broadcast="1" flags="4" effect="1" show="1" is_reset="1"/>
+				<RewardItem type="3" para1="2044356 " para2="2044356 " para3="0  " probability="10    " daily_max="0" broadcast="1" flags="4" effect="1" show="1"/>
+				<RewardItem type="3" para1="2044458 " para2="2044458 " para3="0  " probability="140   " daily_max="0" broadcast="1" flags="4" effect="1" show="1"/>
+				<RewardItem type="3" para1="40110599" para2="41110598" para3="0  " probability="80    " daily_max="0" broadcast="1" flags="4" effect="1" show="1"/>
+				<RewardItem type="3" para1="40110600" para2="41110599" para3="0  " probability="60    " daily_max="0" broadcast="1" flags="4" effect="1" show="0"/>				
+				<RewardItem type="3" para1="40110601" para2="41110628" para3="0  " probability="80    " daily_max="0" broadcast="1" flags="4" effect="1" show="0"/>
+				<RewardItem type="3" para1="40110412" para2="41110413" para3="0  " probability="150   " daily_max="0" broadcast="1" flags="4" effect="1" show="0"/>
+				<RewardItem type="3" para1="1047917 " para2="1149044 " para3="0  " probability="80    " daily_max="0" broadcast="1" flags="2" effect="1" show="1"/>
+				<RewardItem type="3" para1="1047918 " para2="1149045 " para3="0  " probability="70    " daily_max="0" broadcast="1" flags="2" effect="1" show="0"/>
+				<RewardItem type="3" para1="1047919 " para2="1149046 " para3="0  " probability="120   " daily_max="0" broadcast="1" flags="2" effect="1" show="0"/>
+				<RewardItem type="3" para1="1047408 " para2="1148756 " para3="0  " probability="150   " daily_max="0" broadcast="1" flags="2" effect="1" show="0"/>
+				<RewardItem type="3" para1="1046910 " para2="1148457 " para3="0  " probability="100   " daily_max="0" broadcast="1" flags="2" effect="1" show="0"/>				
+				<RewardItem type="3" para1="3099001 " para2="3099001 " para3="1  " probability="1500  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="3018247 " para2="3018247 " para3="1  " probability="1000  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1050015 " para2="1150011 " para3="0  " probability="333   " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="2029531 " para2="2029531 " para3="0  " probability="500   " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>				
+				<RewardItem type="3" para1="2038538 " para2="2038538 " para3="0  " probability="1000  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1032752 " para2="1133340 " para3="0  " probability="1500  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+		    <RewardItem type="3" para1="1082130 " para2="1182383 " para3="0  " probability="1300  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1032751 " para2="1133339 " para3="0  " probability="1500  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>				
+		    <RewardItem type="3" para1="1082131 " para2="1182384 " para3="0  " probability="1300  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1032750 " para2="1133338 " para3="0  " probability="1500  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1082132 " para2="1182385 " para3="0  " probability="1300  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+		    <RewardItem type="3" para1="1044585 " para2="1144601 " para3="0  " probability="3000  " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>
+				<RewardItem type="3" para1="1040918 " para2="1141489 " para3="0  " probability="13000 " daily_max="0" broadcast="0" flags="1" effect="1" show="0"/>				
+				<RewardItem type="3" para1="3036052 " para2="3036052 " para3="1  " probability="13000 " daily_max="0" broadcast="0" flags="0" effect="0" show="0"/>
+				<RewardItem type="3" para1="3020002 " para2="3020002 " para3="500" probability="14000 " daily_max="0" broadcast="0" flags="0" effect="0" show="0"/> 
+		 		<RewardItem type="3" para1="3018443 " para2="3018443 " para3="1  " probability="14000 " daily_max="0" broadcast="0" flags="0" effect="0" show="0"/>
+		    <RewardItem type="3" para1="3018248 " para2="3018248 " para3="1  " probability="14000 " daily_max="0" broadcast="0" flags="0" effect="0" show="0"/>
+		 		<RewardItem type="3" para1="3018325 " para2="3018325 " para3="150" probability="15177 " daily_max="0" broadcast="0" flags="0" effect="0" show="0"/>
+			</RewardItems>
+		</LotteryReward>
+		
+		<!-- 
+			保底奖池
+			times:累计抽奖次数； 如：times配置100，则表示玩家在第101次抽奖会从该保底奖池中抽取。
+			更改Activity节点中的reset_id，才会刷新奖池。
+		-->
+		<EnsureRewards> 
+			<EnsureReward  times="400">
+				<RewardItems>
+					<RewardItem type="3" para1="1047917" para2="1149044" para3="0" probability="20" /> 
+					<RewardItem type="3" para1="1047918" para2="1149045" para3="0" probability="20" />	
+					<RewardItem type="3" para1="1047919" para2="1149046" para3="0" probability="20" /> 
+					<RewardItem type="3" para1="1047408" para2="1148756" para3="0" probability="20" />
+					<RewardItem type="3" para1="1046910" para2="1148457" para3="0" probability="20" />							 
+				</RewardItems>
+			</EnsureReward>
+			<EnsureReward  times="800">
+				<RewardItems>
+					<RewardItem type="3" para1="40110599" para2="41110598" para3="0" probability="25" /> 
+					<RewardItem type="3" para1="40110600" para2="41110599" para3="0" probability="25" />	
+					<RewardItem type="3" para1="40110601" para2="41110628" para3="0" probability="25" /> 
+					<RewardItem type="3" para1="40110412" para2="41110413" para3="0" probability="25" />			
+				</RewardItems>
+			</EnsureReward>
+		</EnsureRewards>
+	</Activity>    
+</VisibleLottery>

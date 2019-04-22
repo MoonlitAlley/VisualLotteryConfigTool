@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<GeneralLotteryCost>
+	<!--通用抽奖道具配置
+	-->
+	<CostItemList>
+	<!-- CostItemList 消耗品列表 
+				CostItem 消耗品
+					item_id 消耗品id
+					priority 优先级 按递增顺序配置 不可重复 
+	-->
+		<CostItem item_id="3132001" priority="1"/>
+		<CostItem item_id="3036008" priority="2"/>
+		<CostItem item_id="3036180" priority="3"/>
+	</CostItemList>
+	
+</GeneralLotteryCost>

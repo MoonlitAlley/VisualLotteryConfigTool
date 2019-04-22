@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+
+<ItemTimeLinessConfig>
+	<ItemInfos>
+		<!-- 
+		type_id 道具id
+		flag 表示时效性道具的处理方式 
+		duability 有效期的时效根据flag不同而不同
+		flag为1 duability表示道具的有效截止日期
+		
+		1、不能配置已失效的时效性道具到各个获取途径中！！！
+    2、不能在一个包裹内配置多种不同失效时间的时效性道具！！！
+    3、不能将截止时间配置为已经过去的时间！！！
+		-->
+		<info type_id="3132001" flag="1" duability="2019-04-16" />
+		<info type_id="3133001" flag="1" duability="2018-12-25" />
+	</ItemInfos>
+</ItemTimeLinessConfig>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="GB2312"?>
+<MobileConfig>
+	<CDNPrefix val="http://ktv.x5.qq.com/dynamic_new/itemicon/"/>
+
+	<!--
+	<FixedModules> 固定功能模块位 只允许配置<=3个 子模块排序按照配置先后
+	<UnfixedModules> 非固定功能模块位 允许配置任意个 子模块排序按照配置先后
+	<Module> 实际功能模块配置
+		module_id 活动id 见小灵通结构体 RootItemEnum
+			1	背包
+			2	跳舞巡演
+			3	斗地主
+			4	活跃商店
+			5	刮刮乐
+			6	跨服抽奖
+			7	点券大转盘
+			8	给力币抽奖
+			9	每日签到
+			10	领奖中心
+			11	宠物币训练场
+			12	勇闯重楼
+			13	祈舞星坛
+			14	深海捕鱼
+			15  时光任意门
+			16  心愿纸飞机
+			17  星光藏宝阁
+			18  幻光宝藏
+			19  管家小妖
+			20  口袋主题屋
+			21  2019新春赠礼
+			22  水晶石抽奖
+	-->
+	<Modules>
+		<FixedModules>
+			<Module module_id="1" />
+			<Module module_id="19" />
+			<Module module_id="20" />
+		</FixedModules>
+		<UnfixedModules>
+			<Module module_id="5" />
+			<Module module_id="6" />
+			<Module module_id="17" />
+			<Module module_id="15" />
+			<Module module_id="16" />
+			<Module module_id="18" />
+			<Module module_id="22" />
+			<Module module_id="7" />
+			<Module module_id="8" />
+			<Module module_id="3" />
+			<Module module_id="9" />
+			<Module module_id="10" />
+			<Module module_id="21" />
+			<Module module_id="4" />
+			<Module module_id="2" />
+			<Module module_id="11" />
+			<Module module_id="12" />
+			<Module module_id="13" />
+			<Module module_id="14" />
+		</UnfixedModules>
+	</Modules>
+	
+	<!--模块角标配置-->
+	<ModuleFooters>
+		<!--
+		<NewFooters> new角标配置 需要显示角标的活动均需要在此标签内配置
+		<Footer> 角标
+			module_id 对应配置中的模块id
+			start_time new角标显示的起始时间
+			end_time new角标显示的结束时间
+		-->		
+		<NewFooters>	
+			<Footer module_id="1" start_time="2018-10-9 00:00:00" end_time="2018-11-5 23:59:59" />
+			<Footer module_id="2" start_time="2018-10-9 00:00:00" end_time="2018-11-5 23:59:59" />
+			<Footer module_id="15" start_time="2019-02-14 10:00:00" end_time="2019-03-01 23:59:59" />
+			<Footer module_id="16" start_time="2019-02-15 10:00:00" end_time="2019-02-28 23:59:59" />
+			<Footer module_id="17" start_time="2019-03-7 18:00:00" end_time="2019-03-10 23:59:59" />
+			<Footer module_id="19" start_time="2018-12-11 00:00:00" end_time="2019-1-14 23:59:59" />
+			<Footer module_id="20" start_time="2018-12-11 00:00:00" end_time="2018-12-18 23:59:59" />
+			<Footer module_id="18" start_time="2019-01-17 04:00:00" end_time="2019-01-24 00:00:00" />
+			<Footer module_id="6" start_time="2019-03-20 10:00:00" end_time="2019-03-24 23:59:59" />
+			<Footer module_id="21" start_time="2019-01-15 00:00:00" end_time="2019-02-28 23:59:59" />
+			<Footer module_id="22" start_time="2019-03-14 00:00:00" end_time="2019-04-9 23:59:59" />
+			<Footer module_id="23" start_time="2019-04-11 00:00:00" end_time="2019-04-16 23:59:59" />
+		</NewFooters>			
+	</ModuleFooters>
+	
+	<!--
+		模块光效时间段
+	-->
+	<StreamerEffects>
+		<!-- 每条配置的时间最好不要超过10条，否则会影响服务器和网络性能 -->
+		<StreamerEffectsItem module_id="18">
+			<item start_time="2019-01-17 04:00:00" end_time="2019-01-24 00:00:00"/>
+		</StreamerEffectsItem>
+		<StreamerEffectsItem module_id="20">
+			<item start_time="2018-12-11 00:00:00" end_time="2018-12-18 23:59:59"/>
+		</StreamerEffectsItem>
+	</StreamerEffects>
+
+	<PKGItemSize size="400" />			<!--小灵通背包数据分包 物品的数量-->	
+	<MobileEnterPKGInterval val="2" />	<!--服务器拉取背包数据的间隔时间(秒)-->
+</MobileConfig>

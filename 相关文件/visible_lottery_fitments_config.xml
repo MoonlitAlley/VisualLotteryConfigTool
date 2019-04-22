@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="GBK" standalone="yes"?>
+<VisibleLotteryFitment>
+	<EntitySpawn> <!-- 抽奖家具 ID:1057 -->
+		<GlobalParam entity_type="1057" >
+			<scene_type value="30"/>
+		</GlobalParam>
+
+		<EntityTypeID/><!-- 不用配置 -->
+		<Positions/><!-- 不用配置 -->
+	</EntitySpawn>
+	
+	<EntitySpawn> <!-- 雕像展台 ID:1059 -->
+		<GlobalParam entity_type="1059" >
+			<scene_type value="30"/>
+		</GlobalParam>
+
+		<EntityTypeID/><!-- 不用配置 -->
+		<Positions/><!-- 不用配置 -->
+	</EntitySpawn>
+
+	<EntitySpawn> <!-- 福袋外观 refresh_interval,最大存活时间，单位秒  threshold，场景最大存在数量-->
+		<GlobalParam entity_type="1061" refresh_interval="120" threshold="200" >
+			<scene_type value="30"/>
+		</GlobalParam>
+		
+		<EntityTypeID/><!-- 不用配置 -->
+		<Positions/><!-- 不用配置 -->
+
+	</EntitySpawn>
+	
+	<!--排名前三玩家雕像坐标-->
+	<TopThreeStatuePositions>
+		<statuepos rank="1" x="1233.53" y="1408.63" z="1210.5" z_level="100" aspect="270"/>
+		<statuepos rank="2" x="1233.53" y="1412.29" z="1208.9" z_level="100" aspect="270"/>
+		<statuepos rank="3" x="1233.53" y="1404.99" z="1208.4" z_level="100" aspect="270"/>
+	</TopThreeStatuePositions>
+	
+	<Activity id="39">
+		<Fitments entity_type="1057" > <!-- 抽奖家具配置 para1 抽奖次数 para2 交互距离-->
+			<fitment fit_type="5200273" para1="1" x="1222.864" y="1415.795" z="1207.4" z_level="1" aspect="0" para2="5.3"/> <!-- 抽奖1次家具 -->
+			<fitment fit_type="5200274" para1="10" x="1209.565" y="1434.657" z="1207.4" z_level="1" aspect="-90" para2="5.3"/><!-- 抽奖10家具 -->
+			<fitment fit_type="5200275" para1="50" x="1205.106" y="1415.506" z="1207.4" z_level="1" aspect="-40.237" para2="5.3"/><!-- 抽奖50家具 -->
+
+		</Fitments>
+		<Fitments entity_type="1059"> <!-- 雕像展台 -->
+			<fitment fit_type="5200277" x="1232" y="1414" z="1207.4" z_level="1" aspect="270" />
+		</Fitments>
+
+		<Fitments entity_type="1061"><!-- 福袋外观配置 para1 福袋等级 -->
+			<Appear radius="5.0" /> <!-- 掉落半径，以人物坐标为中心 -->
+			<fitment fit_type="5200278" para1="1" />
+			<fitment fit_type="5200279" para1="2" />
+		</Fitments>
+	</Activity>
+
+</VisibleLotteryFitment>	
